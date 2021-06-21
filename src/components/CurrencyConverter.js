@@ -11,7 +11,7 @@ export default function CurrencyConverter() {
 
 
     useEffect(() => {
-        fetch("http://api.exchangeratesapi.io/latest?access_key=5c7bfac090e81fd444840920b7266e4b").then(x => x.json())
+        fetch('http://api.exchangeratesapi.io/v1/latest?access_key=3dbd53d88efe16835a7eb29bfc9644d6').then(x => x.json())
             .then((x) => {
                 setData(x.rates)
                 setInput1(1)
